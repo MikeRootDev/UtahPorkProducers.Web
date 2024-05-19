@@ -1,30 +1,183 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">UtahPorkProducers.Web</a>
-    </div>
-</div>
-
-<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
-
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-
-        <div class="nav-item px-3">
+﻿<nav id="navbar" class="navbar">
+    <ul>
+        <li class="dropdown">
             <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
+                <span>Who We Are <i class="bi bi-chevron-down dropdown-indicator"></i></span>
             </NavLink>
-        </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
+            <ul>
+                <li>
+                    <NavLink class="nav-link" href="currentOfficers">
+                        Current Officers
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link" href="alliedIndustryPartners">
+                        Allied Industry Partners
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link" href="factsAboutPork">
+                        Facts About Pork
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link" href="contactUs">
+                        Contact Us
+                    </NavLink>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <NavLink class="nav-link" href="blogsAndEvents">
+                <span>Blogs & Events <i class="bi bi-chevron-down dropdown-indicator"></i></span>
             </NavLink>
-        </div>
-    </nav>
-</div>
-
+            <ul>
+                <li>
+                    <NavLink class="nav-link" href="blog">
+                        Blog
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link" href="events">
+                        Events
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link" href="sponsorship">
+                        Sponsorship
+                    </NavLink>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <NavLink class="nav-link" href="producers">
+                <span>Producers <i class="bi bi-chevron-down dropdown-indicator"></i></span>
+            </NavLink>
+            <ul>
+                <li>
+                    <NavLink class="nav-link" href="weCare">
+                        WE CARE
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link" href="pigBreeds">
+                        Pig Breeds
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link" href="quickFacts">
+                        Quick Facts
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link" href="porktionary">
+                        Pork-tionary
+                    </NavLink>
+                </li>
+                <li class="dropdown">
+                    <NavLink class="nav-link" href="membership">
+                        <span>Membership</span> <i class="bi bi-chevron-down dropdown-indicator"></i>
+                    </NavLink>
+                    <ul>
+                        <li>
+                            <NavLink class="nav-link" href="meetingMinutes">
+                                Meeting Minutes
+                            </NavLink>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <NavLink class="nav-link" href="yqca">
+                        YQCA
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link" href="adultPqaPlus">
+                        Adult PQA Plus
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link" href="adultTqa">
+                        Adult TQA
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link" href="helpfulLinks">
+                        Helpful Links
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link" href="pigsForSale">
+                        Pigs For Sale
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link" href="photoLibrary">
+                        Photo Library
+                    </NavLink>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <NavLink class="nav-link" href="consumers">
+                <span>Consumers <i class="bi bi-chevron-down dropdown-indicator"></i></span>
+            </NavLink>
+            <ul>
+                <li>
+                    <NavLink class="nav-link" href="recipeSearch">
+                        Recipe Search
+                    </NavLink>
+                </li>
+                <li class="dropdown">
+                    <NavLink class="nav-link" href="videos">
+                        <span>Videos</span> <i class="bi bi-chevron-down dropdown-indicator"></i>
+                    </NavLink>
+                    <ul>
+                        <li>
+                            <NavLink class="nav-link" href="foodComesFromFarms">
+                                Food Comes From Farms
+                            </NavLink>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <NavLink class="nav-link" href="youthInformation">
+                        <span>Youth Information</span> <i class="bi bi-chevron-down dropdown-indicator"></i>
+                    </NavLink>
+                    <ul>
+                        <li>
+                            <NavLink class="nav-link" href="youthPorkAmbassadorScholarship">
+                                Youth Pork Ambassador Scholarship
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink class="nav-link" href="youthPorkAmbassadors">
+                                2023 Youth Pork Ambassadors
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink class="nav-link" href="yqca">
+                                YQCA
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink class="nav-link" href="littleHandsOnTheFarm">
+                                Utah State Fair - Little Hands on the Farm
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink class="nav-link" href="agInTheClassroom">
+                                Ag in the Classroom
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink class="nav-link" href="nutritionInformation">
+                                Nutrition Information
+                            </NavLink>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>

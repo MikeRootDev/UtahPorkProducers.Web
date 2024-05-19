@@ -1,23 +1,37 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
+<!-- ======= Header ======= -->
+<header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        
+        <NavLink class="nav-link logo d-flex align-items-center" href="" Match="NavLinkMatch.All">
+            <img src="assets/img/uppa_logo.png" />
+        </NavLink>
+
         <NavMenu />
-    </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        <div class="position-relative">
+            <a href="#" class="mx-2"><span class="bi-facebook"></span></a>
+            <a href="#" class="mx-2"><span class="bi-twitter"></span></a>
+            <a href="#" class="mx-2"><span class="bi-instagram"></span></a>
+
+            <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+
+            <!-- ======= Search Form ======= -->
+            <div class="search-form-wrap js-search-form-wrap">
+                <form action="search-result.html" class="search-form">
+                    <span class="icon bi-search"></span>
+                    <input type="text" placeholder="Search" class="form-control">
+                    <button class="btn js-search-close"><span class="bi-x"></span></button>
+                </form>
+            </div><!-- End Search Form -->
+
         </div>
+    </div>
+</header>
+   
+<main id="main">
+    @Body
+</main>
 
-        <article class="content px-4">
-            @Body
-        </article>
-    </main>
-</div>
-
-<div id="blazor-error-ui">
-    An unhandled error has occurred.
-    <a href="" class="reload">Reload</a>
-    <a class="dismiss">🗙</a>
-</div>
